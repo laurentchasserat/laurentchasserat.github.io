@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<title>Game of Life</title>
+
+  <!-- Charset -->
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+
+  <!-- Roboto font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link href="./gof.css" rel="stylesheet">
+</head>
+<body class="grey-background">
+	<div class="description">
+		<h1>Hey you!</h1>
+		<p>This is a simple implementation of <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">John Conway's Game of Life</a>. Give life to some cells by clicking on them, then click on the "next step" button ! Toggle the "auto" switch to observe your little societies grow and collapse.</p>
+	</div>
+    <div class="container">
+        <canvas id="myCanvas"
+                width="526"
+                height="526"></canvas>
+				<div class="sidebar">
+		      <p class="sidebar-title">Options</p>
+					<hr>
+					<div class="group-of-buttons">
+		        <button class="button" id="stepBtn">Next step</button>
+					</div>
+					<div class="options-entry">
+		 				<label for="auto">Auto:</label>
+            <input type="checkbox" id="auto"/>
+					</div>
+				</div>
+    </div>
+</body>
+<div class="footer grey-background">
+	<p>Created by L. Chasserat and T. Petitfils</p>
+</div>
+
+<!-- JS -->
+<script src="./jquery.min.js"></script>
+<script type="text/javascript" src="./gof.js"></script>
+</html>
